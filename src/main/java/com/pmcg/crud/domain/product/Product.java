@@ -20,9 +20,12 @@ public class Product {
 
     private Number price_in_cents;
 
+    private String id_sup;
+
     public Product(RequestProduct requestProduct){
         this.name = requestProduct.name();
         this.price_in_cents = requestProduct.price_in_cents();
+        this.id_sup = requestProduct.id_sup();
     }
 
 }

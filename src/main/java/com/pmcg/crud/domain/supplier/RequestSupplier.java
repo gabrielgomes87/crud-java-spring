@@ -1,18 +1,15 @@
-package com.pmcg.crud.domain.product;
+package com.pmcg.crud.domain.supplier;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record RequestProduct(
+public record RequestSupplier(
 
-        String id,
-
-        @NotNull
         String id_sup,
 
         @NotBlank
         String name,
 
         @NotNull
-        Number price_in_cents) {
+        String cnpj) {
 }
